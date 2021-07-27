@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessCameraViewController" customModule="Ionix_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-mh-kaD">
+                    <rect key="frame" x="76" y="177" width="263" height="231"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Access" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgL-gE-4Ql">
+                    <rect key="frame" x="133" y="455" width="148" height="23.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yq5-Mq-yAn" customClass="IAButton" customModule="Ionix_App" customModuleProvider="target">
+                    <rect key="frame" x="107" y="644" width="200" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="B5S-NR-mef"/>
+                        <constraint firstAttribute="width" constant="200" id="sz7-oh-IBQ"/>
+                    </constraints>
+                    <state key="normal" title="Allow" backgroundImage="button_background">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClickAllow:" destination="-1" eventType="touchUpInside" id="eGQ-ng-h5w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uco-i2-Slo">
+                    <rect key="frame" x="171" y="721" width="72" height="58"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="XWu-X0-cCv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-5c-aEQ">
+                    <rect key="frame" x="76" y="517" width="263" height="71"/>
+                    <string key="text">Please allow access to 
+your camera to take
+ photos</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="E7V-5c-aEQ" firstAttribute="top" secondItem="ZgL-gE-4Ql" secondAttribute="bottom" constant="38.5" id="69C-Cp-QWM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ojs-mh-kaD" secondAttribute="trailing" constant="75" id="CmZ-l4-tl1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E7V-5c-aEQ" secondAttribute="trailing" constant="75" id="Heb-aV-Nrm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZgL-gE-4Ql" secondAttribute="trailing" constant="133" id="Ipf-w4-xBQ"/>
+                <constraint firstItem="Uco-i2-Slo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="171" id="JOI-2S-5mt"/>
+                <constraint firstItem="Ojs-mh-kaD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="133" id="NIC-Fy-1Uo"/>
+                <constraint firstItem="ZgL-gE-4Ql" firstAttribute="top" secondItem="Ojs-mh-kaD" secondAttribute="bottom" constant="47" id="PCb-ly-2mw"/>
+                <constraint firstItem="Ojs-mh-kaD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="bPR-p1-fOV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yq5-Mq-yAn" secondAttribute="trailing" constant="107" id="dZ1-36-Ga8"/>
+                <constraint firstItem="Uco-i2-Slo" firstAttribute="top" secondItem="yq5-Mq-yAn" secondAttribute="bottom" constant="27" id="eD9-v2-hoO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Uco-i2-Slo" secondAttribute="bottom" constant="83" id="hGM-CO-vT8"/>
+                <constraint firstItem="E7V-5c-aEQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="i2i-At-AeK"/>
+                <constraint firstItem="yq5-Mq-yAn" firstAttribute="top" secondItem="E7V-5c-aEQ" secondAttribute="bottom" constant="56" id="kh8-fN-udj"/>
+                <constraint firstItem="yq5-Mq-yAn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="riO-Ts-Wn5"/>
+                <constraint firstItem="ZgL-gE-4Ql" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="133" id="vAD-8q-MLX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uco-i2-Slo" secondAttribute="trailing" constant="171" id="zTu-ko-Noa"/>
+            </constraints>
+            <point key="canvasLocation" x="21.739130434782609" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="yq5-Mq-yAn">
+            <size key="intrinsicContentSize" width="200" height="200"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="button_background" width="200" height="200"/>
+        <image name="camera" width="263" height="231"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

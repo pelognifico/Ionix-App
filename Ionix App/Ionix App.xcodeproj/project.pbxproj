@@ -24,6 +24,14 @@
 		4568BCD826B0500A0073027E /* GeneralRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCD726B0500A0073027E /* GeneralRoute.swift */; };
 		4568BCDA26B050320073027E /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCD926B050320073027E /* AppRoute.swift */; };
 		4568BCDC26B05A140073027E /* UINavigationController+CE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCDB26B05A140073027E /* UINavigationController+CE.swift */; };
+		4568BCEE26B05D320073027E /* AccessCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCEC26B05D320073027E /* AccessCameraViewController.swift */; };
+		4568BCEF26B05D320073027E /* AccessCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BCED26B05D320073027E /* AccessCameraViewController.xib */; };
+		4568BCF126B062F20073027E /* UIButton+CE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCF026B062F20073027E /* UIButton+CE.swift */; };
+		4568BCF326B063CF0073027E /* IAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCF226B063CF0073027E /* IAButton.swift */; };
+		4568BCF626B06E940073027E /* EnablePushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCF426B06E940073027E /* EnablePushNotificationsViewController.swift */; };
+		4568BCF726B06E940073027E /* EnablePushNotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */; };
+		4568BCFC26B081690073027E /* EnableLocationServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */; };
+		4568BCFD26B081690073027E /* EnableLocationServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,14 @@
 		4568BCD726B0500A0073027E /* GeneralRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRoute.swift; sourceTree = "<group>"; };
 		4568BCD926B050320073027E /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		4568BCDB26B05A140073027E /* UINavigationController+CE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+CE.swift"; sourceTree = "<group>"; };
+		4568BCEC26B05D320073027E /* AccessCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraViewController.swift; sourceTree = "<group>"; };
+		4568BCED26B05D320073027E /* AccessCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessCameraViewController.xib; sourceTree = "<group>"; };
+		4568BCF026B062F20073027E /* UIButton+CE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+CE.swift"; sourceTree = "<group>"; };
+		4568BCF226B063CF0073027E /* IAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAButton.swift; sourceTree = "<group>"; };
+		4568BCF426B06E940073027E /* EnablePushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsViewController.swift; sourceTree = "<group>"; };
+		4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnablePushNotificationsViewController.xib; sourceTree = "<group>"; };
+		4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesViewController.swift; sourceTree = "<group>"; };
+		4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnableLocationServicesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +213,7 @@
 		4568BCC026B04BFC0073027E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4568BCF226B063CF0073027E /* IAButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				4568BCDB26B05A140073027E /* UINavigationController+CE.swift */,
+				4568BCF026B062F20073027E /* UIButton+CE.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +274,9 @@
 		4568BCC826B04D3B0073027E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				4568BCDF26B05C1C0073027E /* Enable Location Services */,
+				4568BCDE26B05C0E0073027E /* Enable Push Notifications */,
+				4568BCDD26B05BF30073027E /* Access Camera */,
 				4568BCC926B04D3B0073027E /* OnboardingRouter.swift */,
 				4568BCCA26B04D3B0073027E /* OnboardingPresenter.swift */,
 				4568BCCB26B04D3B0073027E /* OnboardingWorker.swift */,
@@ -265,6 +286,33 @@
 				4568BCCE26B04D3B0073027E /* OnboardingViewController.xib */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4568BCDD26B05BF30073027E /* Access Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4568BCEC26B05D320073027E /* AccessCameraViewController.swift */,
+				4568BCED26B05D320073027E /* AccessCameraViewController.xib */,
+			);
+			path = "Access Camera";
+			sourceTree = "<group>";
+		};
+		4568BCDE26B05C0E0073027E /* Enable Push Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4568BCF426B06E940073027E /* EnablePushNotificationsViewController.swift */,
+				4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */,
+			);
+			path = "Enable Push Notifications";
+			sourceTree = "<group>";
+		};
+		4568BCDF26B05C1C0073027E /* Enable Location Services */ = {
+			isa = PBXGroup;
+			children = (
+				4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */,
+				4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */,
+			);
+			path = "Enable Location Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +418,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4568BCF726B06E940073027E /* EnablePushNotificationsViewController.xib in Resources */,
 				4568BC9826B041B40073027E /* LaunchScreen.storyboard in Resources */,
+				4568BCEF26B05D320073027E /* AccessCameraViewController.xib in Resources */,
+				4568BCFD26B081690073027E /* EnableLocationServicesViewController.xib in Resources */,
 				4568BC9526B041B40073027E /* Assets.xcassets in Resources */,
 				4568BC9326B041B30073027E /* Main.storyboard in Resources */,
 				4568BCD526B04D3B0073027E /* OnboardingViewController.xib in Resources */,
@@ -405,9 +456,14 @@
 				4568BCD626B04D3B0073027E /* OnboardingViewController.swift in Sources */,
 				4568BC8C26B041B30073027E /* AppDelegate.swift in Sources */,
 				4568BCD126B04D3B0073027E /* OnboardingPresenter.swift in Sources */,
+				4568BCEE26B05D320073027E /* AccessCameraViewController.swift in Sources */,
+				4568BCFC26B081690073027E /* EnableLocationServicesViewController.swift in Sources */,
 				4568BCD226B04D3B0073027E /* OnboardingWorker.swift in Sources */,
 				4568BCD326B04D3B0073027E /* OnboardingInteractor.swift in Sources */,
 				4568BCDA26B050320073027E /* AppRoute.swift in Sources */,
+				4568BCF326B063CF0073027E /* IAButton.swift in Sources */,
+				4568BCF626B06E940073027E /* EnablePushNotificationsViewController.swift in Sources */,
+				4568BCF126B062F20073027E /* UIButton+CE.swift in Sources */,
 				4568BCDC26B05A140073027E /* UINavigationController+CE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -45,5 +45,7 @@
 	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The application needs to access your camera</string>
 </dict>
 </plist>

@@ -10,6 +10,9 @@ import UIKit
 
 enum GeneralRoute: IRouter {
     case onboarding
+    case accessCamera
+    case enablePushNotifications
+    case enableLocationServices
 }
 
 extension GeneralRoute {
@@ -17,6 +20,12 @@ extension GeneralRoute {
         switch self {
         case .onboarding:
             return OnboardingViewController()
+        case .accessCamera:
+            return AccessCameraViewController()
+        case .enablePushNotifications:
+            return EnablePushNotificationsViewController()
+        case .enableLocationServices:
+            return EnableLocationServicesViewController()
         }
     }
 }

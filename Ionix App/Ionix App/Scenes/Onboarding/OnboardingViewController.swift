@@ -50,6 +50,8 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         doSomething()
+//        presentPermissions()
+        router?.routeToAccessCamera()
         
         self.navigationController?.clearBackground()
     }
@@ -59,6 +61,12 @@ class OnboardingViewController: UIViewController {
         let request = Onboarding.Something.Request()
         interactor?.doSomething(request: request)
     }
+    
+//    func presentPermissions() {
+//        let vc = AccessCameraViewController()
+//        vc.modalPresentationStyle = .overCurrentContext
+//        self.present(vc, animated: true, completion: nil)
+//    }
 }
 
 // MARK: - OnboardingDisplayLogic
