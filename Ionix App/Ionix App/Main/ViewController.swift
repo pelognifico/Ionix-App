@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Ionix App
 //
-//  Created by Ruben Duarte on 27/7/21.
+//  Created by Carlos Villamizar on 27/7/21.
 //
 
 import UIKit
