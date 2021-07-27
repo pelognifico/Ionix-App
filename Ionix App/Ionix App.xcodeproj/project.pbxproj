@@ -23,6 +23,7 @@
 		4568BCD626B04D3B0073027E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCCF26B04D3B0073027E /* OnboardingViewController.swift */; };
 		4568BCD826B0500A0073027E /* GeneralRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCD726B0500A0073027E /* GeneralRoute.swift */; };
 		4568BCDA26B050320073027E /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCD926B050320073027E /* AppRoute.swift */; };
+		4568BCDC26B05A140073027E /* UINavigationController+CE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCDB26B05A140073027E /* UINavigationController+CE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4568BCCF26B04D3B0073027E /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4568BCD726B0500A0073027E /* GeneralRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRoute.swift; sourceTree = "<group>"; };
 		4568BCD926B050320073027E /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		4568BCDB26B05A140073027E /* UINavigationController+CE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+CE.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		4568BCC126B04C070073027E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4568BCDB26B05A140073027E /* UINavigationController+CE.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				4568BCD226B04D3B0073027E /* OnboardingWorker.swift in Sources */,
 				4568BCD326B04D3B0073027E /* OnboardingInteractor.swift in Sources */,
 				4568BCDA26B050320073027E /* AppRoute.swift in Sources */,
+				4568BCDC26B05A140073027E /* UINavigationController+CE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

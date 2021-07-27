@@ -22,6 +22,10 @@ class OnboardingViewController: UIViewController {
         setup()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -46,6 +50,8 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         doSomething()
+        
+        self.navigationController?.clearBackground()
     }
 
     // MARK: - Do something

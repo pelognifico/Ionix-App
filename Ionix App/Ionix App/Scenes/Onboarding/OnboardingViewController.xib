@@ -17,7 +17,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <viewLayoutGuide key="safeArea" id="3Dh-Su-Nra"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
             <point key="canvasLocation" x="132" y="125"/>
         </view>
