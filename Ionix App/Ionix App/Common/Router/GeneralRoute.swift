@@ -13,6 +13,7 @@ enum GeneralRoute: IRouter {
     case accessCamera
     case enablePushNotifications
     case enableLocationServices
+    case home
 }
 
 extension GeneralRoute {
@@ -26,6 +27,8 @@ extension GeneralRoute {
             return EnablePushNotificationsViewController()
         case .enableLocationServices:
             return EnableLocationServicesViewController()
+        case .home:
+            return HomeViewController()
         }
     }
 }

@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Ionix App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Ionix App
+
+pod 'NotificationBannerSwift', '~> 3.0.0'
+pod 'Alamofire', '~> 5.2'
+pod 'Kingfisher', '~> 6.0'
+
+  target 'Ionix AppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Ionix AppUITests' do
+    # Pods for testing
+  end
+
+end

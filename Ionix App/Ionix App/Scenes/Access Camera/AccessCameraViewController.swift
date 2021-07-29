@@ -8,16 +8,51 @@
 import UIKit
 import AVFoundation
 
+protocol AccessCameraDisplayLogic: AnyObject {
+    func displaySomething(viewModel: AccessCamera.Something.ViewModel)
+}
+
 class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    var router: (NSObjectProtocol & OnboardingRoutingLogic & OnboardingDataPassing)?
-    
     var captureSession: AVCaptureSession!
+    
+    var interactor: AccessCameraBusinessLogic?
+    var router: (NSObjectProtocol & AccessCameraRoutingLogic & AccessCameraDataPassing)?
+
+    // MARK: - Object lifecycle
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+  
+    // MARK: - Setup
+    private func setup() {
+        let viewController = self
+        let interactor = AccessCameraInteractor()
+        let presenter = AccessCameraPresenter()
+        let router = AccessCameraRouter()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.clearBackground()
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     // MARK: - Methods
@@ -109,10 +144,10 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
         present(alert, animated: true, completion: nil)
     }
     
-    func presentPermissions() {
-        let vc = EnablePushNotificationsViewController()
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true, completion: nil)
+    // MARK: - Do something
+    func doSomething() {
+        let request = AccessCamera.Something.Request()
+        interactor?.doSomething(request: request)
     }
 
 
@@ -126,4 +161,10 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
         router?.routeToEnablePushNotifications()
     }
     
+}
+
+// MARK: - AccessCameraDisplayLogic
+extension AccessCameraViewController: AccessCameraDisplayLogic {
+    func displaySomething(viewModel: AccessCamera.Something.ViewModel) {
+    }
 }

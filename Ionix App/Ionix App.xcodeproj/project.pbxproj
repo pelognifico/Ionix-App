@@ -3,10 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E091E31CCA623CC5ECA4F0 /* Pods_Ionix_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85406F8FCD292F2533EE4684 /* Pods_Ionix_App.framework */; };
+		452933D426B1E06F0039B56A /* HomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D326B1E06F0039B56A /* HomeError.swift */; };
+		452933D826B20A960039B56A /* IAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D726B20A960039B56A /* IAView.swift */; };
+		452933DA26B215900039B56A /* IAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D926B215900039B56A /* IAImageView.swift */; };
+		452933E126B21B3A0039B56A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933DF26B21B3A0039B56A /* PostTableViewCell.swift */; };
+		452933E226B21B3A0039B56A /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452933E026B21B3A0039B56A /* PostTableViewCell.xib */; };
+		452933ED26B34AB10039B56A /* AccessCameraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933EC26B34AB10039B56A /* AccessCameraModels.swift */; };
+		452933EF26B34ACE0039B56A /* AccessCameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933EE26B34ACE0039B56A /* AccessCameraInteractor.swift */; };
+		452933F126B34AD80039B56A /* AccessCameraWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933F026B34AD80039B56A /* AccessCameraWorker.swift */; };
+		452933F326B34AE10039B56A /* AccessCameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933F226B34AE10039B56A /* AccessCameraPresenter.swift */; };
+		452933F526B34AEA0039B56A /* AccessCameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933F426B34AEA0039B56A /* AccessCameraRouter.swift */; };
+		452933F726B350080039B56A /* EnablePushNotificationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933F626B350080039B56A /* EnablePushNotificationsRouter.swift */; };
+		452933F926B350160039B56A /* EnablePushNotificationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933F826B350160039B56A /* EnablePushNotificationsPresenter.swift */; };
+		452933FB26B3501E0039B56A /* EnablePushNotificationsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933FA26B3501D0039B56A /* EnablePushNotificationsWorker.swift */; };
+		452933FD26B3502A0039B56A /* EnablePushNotificationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933FC26B3502A0039B56A /* EnablePushNotificationsInteractor.swift */; };
+		452933FF26B350320039B56A /* EnablePushNotificationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933FE26B350320039B56A /* EnablePushNotificationsModels.swift */; };
+		4529340126B3539C0039B56A /* EnableLocationServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340026B3539C0039B56A /* EnableLocationServicesRouter.swift */; };
+		4529340326B353A30039B56A /* EnableLocationServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340226B353A30039B56A /* EnableLocationServicesPresenter.swift */; };
+		4529340526B353AB0039B56A /* EnableLocationServicesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340426B353AB0039B56A /* EnableLocationServicesWorker.swift */; };
+		4529340726B353B20039B56A /* EnableLocationServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340626B353B20039B56A /* EnableLocationServicesInteractor.swift */; };
+		4529340926B353B70039B56A /* EnableLocationServicesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340826B353B70039B56A /* EnableLocationServicesModels.swift */; };
 		4568BC8C26B041B30073027E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BC8B26B041B30073027E /* AppDelegate.swift */; };
 		4568BC9026B041B30073027E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BC8F26B041B30073027E /* ViewController.swift */; };
 		4568BC9326B041B30073027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568BC9126B041B30073027E /* Main.storyboard */; };
@@ -32,6 +53,20 @@
 		4568BCF726B06E940073027E /* EnablePushNotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */; };
 		4568BCFC26B081690073027E /* EnableLocationServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */; };
 		4568BCFD26B081690073027E /* EnableLocationServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */; };
+		4568BD0126B198C80073027E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BCFF26B198C80073027E /* HomeViewController.swift */; };
+		4568BD0226B198C80073027E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568BD0026B198C80073027E /* HomeViewController.xib */; };
+		4568BD0426B198D80073027E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD0326B198D80073027E /* HomeInteractor.swift */; };
+		4568BD0626B198EB0073027E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD0526B198EB0073027E /* HomePresenter.swift */; };
+		4568BD0826B199100073027E /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD0726B199100073027E /* HomeWorker.swift */; };
+		4568BD0A26B1991D0073027E /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD0926B1991D0073027E /* HomeModels.swift */; };
+		4568BD0C26B1992B0073027E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD0B26B1992B0073027E /* HomeRouter.swift */; };
+		4568BD1926B1C5490073027E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD1826B1C5490073027E /* NetworkService.swift */; };
+		4568BD1C26B1C9620073027E /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD1B26B1C9620073027E /* HomeEndpoint.swift */; };
+		4568BD1E26B1C9780073027E /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD1D26B1C9780073027E /* HomeAPI.swift */; };
+		4568BD2026B1CAFB0073027E /* HomeWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD1F26B1CAFB0073027E /* HomeWorkers.swift */; };
+		4568BD2226B1D8870073027E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BD2126B1D8870073027E /* Home.swift */; };
+		5BDE3B4AD275E0EE6254AD62 /* Pods_Ionix_App_Ionix_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06707E0D3D9A25EB2C9DA3CF /* Pods_Ionix_App_Ionix_AppUITests.framework */; };
+		CFE6355F479434CE85FB91C2 /* Pods_Ionix_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00037D4C189656B73D4B90DF /* Pods_Ionix_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +87,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00037D4C189656B73D4B90DF /* Pods_Ionix_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ionix_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06707E0D3D9A25EB2C9DA3CF /* Pods_Ionix_App_Ionix_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ionix_App_Ionix_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E209A149C7AA2D18CA22475 /* Pods-Ionix AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Ionix AppTests/Pods-Ionix AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27527B757FF3EC24BE6177DE /* Pods-Ionix App-Ionix AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App-Ionix AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		290C80A671213F0746F83999 /* Pods-Ionix App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App.debug.xcconfig"; path = "Target Support Files/Pods-Ionix App/Pods-Ionix App.debug.xcconfig"; sourceTree = "<group>"; };
+		452933D326B1E06F0039B56A /* HomeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeError.swift; sourceTree = "<group>"; };
+		452933D726B20A960039B56A /* IAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAView.swift; sourceTree = "<group>"; };
+		452933D926B215900039B56A /* IAImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAImageView.swift; sourceTree = "<group>"; };
+		452933DF26B21B3A0039B56A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		452933E026B21B3A0039B56A /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		452933EC26B34AB10039B56A /* AccessCameraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraModels.swift; sourceTree = "<group>"; };
+		452933EE26B34ACE0039B56A /* AccessCameraInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraInteractor.swift; sourceTree = "<group>"; };
+		452933F026B34AD80039B56A /* AccessCameraWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraWorker.swift; sourceTree = "<group>"; };
+		452933F226B34AE10039B56A /* AccessCameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraPresenter.swift; sourceTree = "<group>"; };
+		452933F426B34AEA0039B56A /* AccessCameraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraRouter.swift; sourceTree = "<group>"; };
+		452933F626B350080039B56A /* EnablePushNotificationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsRouter.swift; sourceTree = "<group>"; };
+		452933F826B350160039B56A /* EnablePushNotificationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsPresenter.swift; sourceTree = "<group>"; };
+		452933FA26B3501D0039B56A /* EnablePushNotificationsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsWorker.swift; sourceTree = "<group>"; };
+		452933FC26B3502A0039B56A /* EnablePushNotificationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsInteractor.swift; sourceTree = "<group>"; };
+		452933FE26B350320039B56A /* EnablePushNotificationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePushNotificationsModels.swift; sourceTree = "<group>"; };
+		4529340026B3539C0039B56A /* EnableLocationServicesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesRouter.swift; sourceTree = "<group>"; };
+		4529340226B353A30039B56A /* EnableLocationServicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesPresenter.swift; sourceTree = "<group>"; };
+		4529340426B353AB0039B56A /* EnableLocationServicesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesWorker.swift; sourceTree = "<group>"; };
+		4529340626B353B20039B56A /* EnableLocationServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesInteractor.swift; sourceTree = "<group>"; };
+		4529340826B353B70039B56A /* EnableLocationServicesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesModels.swift; sourceTree = "<group>"; };
 		4568BC8826B041B30073027E /* Ionix App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ionix App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568BC8B26B041B30073027E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4568BC8F26B041B30073027E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +143,22 @@
 		4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnablePushNotificationsViewController.xib; sourceTree = "<group>"; };
 		4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesViewController.swift; sourceTree = "<group>"; };
 		4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnableLocationServicesViewController.xib; sourceTree = "<group>"; };
+		4568BCFF26B198C80073027E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4568BD0026B198C80073027E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4568BD0326B198D80073027E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		4568BD0526B198EB0073027E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4568BD0726B199100073027E /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		4568BD0926B1991D0073027E /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		4568BD0B26B1992B0073027E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4568BD1826B1C5490073027E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4568BD1B26B1C9620073027E /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
+		4568BD1D26B1C9780073027E /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		4568BD1F26B1CAFB0073027E /* HomeWorkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkers.swift; sourceTree = "<group>"; };
+		4568BD2126B1D8870073027E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		85406F8FCD292F2533EE4684 /* Pods_Ionix_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ionix_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8F2F763BFB27FE5471A298 /* Pods-Ionix AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix AppTests.release.xcconfig"; path = "Target Support Files/Pods-Ionix AppTests/Pods-Ionix AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5E8905779D4D8FCF99DE690 /* Pods-Ionix App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App.release.xcconfig"; path = "Target Support Files/Pods-Ionix App/Pods-Ionix App.release.xcconfig"; sourceTree = "<group>"; };
+		F205CFB2C1D950FBF4F53D2A /* Pods-Ionix App-Ionix AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App-Ionix AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E091E31CCA623CC5ECA4F0 /* Pods_Ionix_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE6355F479434CE85FB91C2 /* Pods_Ionix_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +182,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDE3B4AD275E0EE6254AD62 /* Pods_Ionix_App_Ionix_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E7D7D22F77DFB03E93DDDB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				290C80A671213F0746F83999 /* Pods-Ionix App.debug.xcconfig */,
+				D5E8905779D4D8FCF99DE690 /* Pods-Ionix App.release.xcconfig */,
+				27527B757FF3EC24BE6177DE /* Pods-Ionix App-Ionix AppUITests.debug.xcconfig */,
+				F205CFB2C1D950FBF4F53D2A /* Pods-Ionix App-Ionix AppUITests.release.xcconfig */,
+				0E209A149C7AA2D18CA22475 /* Pods-Ionix AppTests.debug.xcconfig */,
+				BC8F2F763BFB27FE5471A298 /* Pods-Ionix AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4568BC7F26B041B30073027E = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +209,8 @@
 				4568BCA126B041B40073027E /* Ionix AppTests */,
 				4568BCAC26B041B40073027E /* Ionix AppUITests */,
 				4568BC8926B041B30073027E /* Products */,
+				2E7D7D22F77DFB03E93DDDB1 /* Pods */,
+				78F85003DA39C426A161946A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +258,10 @@
 		4568BCBB26B04BA30073027E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4568BCDF26B05C1C0073027E /* Enable Location Services */,
+				4568BCDE26B05C0E0073027E /* Enable Push Notifications */,
+				4568BCDD26B05BF30073027E /* Access Camera */,
+				4568BCFE26B197560073027E /* Home */,
 				4568BCC826B04D3B0073027E /* Onboarding */,
 			);
 			path = Scenes;
@@ -213,7 +311,9 @@
 		4568BCC026B04BFC0073027E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				452933D726B20A960039B56A /* IAView.swift */,
 				4568BCF226B063CF0073027E /* IAButton.swift */,
+				452933D926B215900039B56A /* IAImageView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -244,6 +344,7 @@
 		4568BCC426B04CAD0073027E /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				4568BD1F26B1CAFB0073027E /* HomeWorkers.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -251,6 +352,8 @@
 		4568BCC526B04CB40073027E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4568BD1826B1C5490073027E /* NetworkService.swift */,
+				4568BD1A26B1C7F20073027E /* Home */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -258,6 +361,7 @@
 		4568BCC626B04CBB0073027E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4568BD2126B1D8870073027E /* Home.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,9 +378,6 @@
 		4568BCC826B04D3B0073027E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				4568BCDF26B05C1C0073027E /* Enable Location Services */,
-				4568BCDE26B05C0E0073027E /* Enable Push Notifications */,
-				4568BCDD26B05BF30073027E /* Access Camera */,
 				4568BCC926B04D3B0073027E /* OnboardingRouter.swift */,
 				4568BCCA26B04D3B0073027E /* OnboardingPresenter.swift */,
 				4568BCCB26B04D3B0073027E /* OnboardingWorker.swift */,
@@ -291,6 +392,11 @@
 		4568BCDD26B05BF30073027E /* Access Camera */ = {
 			isa = PBXGroup;
 			children = (
+				452933F426B34AEA0039B56A /* AccessCameraRouter.swift */,
+				452933F226B34AE10039B56A /* AccessCameraPresenter.swift */,
+				452933F026B34AD80039B56A /* AccessCameraWorker.swift */,
+				452933EE26B34ACE0039B56A /* AccessCameraInteractor.swift */,
+				452933EC26B34AB10039B56A /* AccessCameraModels.swift */,
 				4568BCEC26B05D320073027E /* AccessCameraViewController.swift */,
 				4568BCED26B05D320073027E /* AccessCameraViewController.xib */,
 			);
@@ -300,6 +406,11 @@
 		4568BCDE26B05C0E0073027E /* Enable Push Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				452933F626B350080039B56A /* EnablePushNotificationsRouter.swift */,
+				452933F826B350160039B56A /* EnablePushNotificationsPresenter.swift */,
+				452933FA26B3501D0039B56A /* EnablePushNotificationsWorker.swift */,
+				452933FC26B3502A0039B56A /* EnablePushNotificationsInteractor.swift */,
+				452933FE26B350320039B56A /* EnablePushNotificationsModels.swift */,
 				4568BCF426B06E940073027E /* EnablePushNotificationsViewController.swift */,
 				4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */,
 			);
@@ -309,10 +420,59 @@
 		4568BCDF26B05C1C0073027E /* Enable Location Services */ = {
 			isa = PBXGroup;
 			children = (
+				4529340026B3539C0039B56A /* EnableLocationServicesRouter.swift */,
+				4529340226B353A30039B56A /* EnableLocationServicesPresenter.swift */,
+				4529340426B353AB0039B56A /* EnableLocationServicesWorker.swift */,
+				4529340626B353B20039B56A /* EnableLocationServicesInteractor.swift */,
+				4529340826B353B70039B56A /* EnableLocationServicesModels.swift */,
 				4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */,
 				4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */,
 			);
 			path = "Enable Location Services";
+			sourceTree = "<group>";
+		};
+		4568BCFE26B197560073027E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4568BD1126B1B0AA0073027E /* Post Cell */,
+				452933D326B1E06F0039B56A /* HomeError.swift */,
+				4568BD0B26B1992B0073027E /* HomeRouter.swift */,
+				4568BD0926B1991D0073027E /* HomeModels.swift */,
+				4568BD0726B199100073027E /* HomeWorker.swift */,
+				4568BD0526B198EB0073027E /* HomePresenter.swift */,
+				4568BD0326B198D80073027E /* HomeInteractor.swift */,
+				4568BCFF26B198C80073027E /* HomeViewController.swift */,
+				4568BD0026B198C80073027E /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4568BD1126B1B0AA0073027E /* Post Cell */ = {
+			isa = PBXGroup;
+			children = (
+				452933DF26B21B3A0039B56A /* PostTableViewCell.swift */,
+				452933E026B21B3A0039B56A /* PostTableViewCell.xib */,
+			);
+			path = "Post Cell";
+			sourceTree = "<group>";
+		};
+		4568BD1A26B1C7F20073027E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4568BD1B26B1C9620073027E /* HomeEndpoint.swift */,
+				4568BD1D26B1C9780073027E /* HomeAPI.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		78F85003DA39C426A161946A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85406F8FCD292F2533EE4684 /* Pods_Ionix_App.framework */,
+				06707E0D3D9A25EB2C9DA3CF /* Pods_Ionix_App_Ionix_AppUITests.framework */,
+				00037D4C189656B73D4B90DF /* Pods_Ionix_AppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,9 +482,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4568BCB226B041B40073027E /* Build configuration list for PBXNativeTarget "Ionix App" */;
 			buildPhases = (
+				82A1A37B43F66961DCC7A3EB /* [CP] Check Pods Manifest.lock */,
 				4568BC8426B041B30073027E /* Sources */,
 				4568BC8526B041B30073027E /* Frameworks */,
 				4568BC8626B041B30073027E /* Resources */,
+				BD86787C3A0DDE6045F717B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +501,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4568BCB526B041B40073027E /* Build configuration list for PBXNativeTarget "Ionix AppTests" */;
 			buildPhases = (
+				6AF895D6A972FB747ADC22EE /* [CP] Check Pods Manifest.lock */,
 				4568BC9A26B041B40073027E /* Sources */,
 				4568BC9B26B041B40073027E /* Frameworks */,
 				4568BC9C26B041B40073027E /* Resources */,
@@ -357,9 +520,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4568BCB826B041B40073027E /* Build configuration list for PBXNativeTarget "Ionix AppUITests" */;
 			buildPhases = (
+				6469F62FBEC66E5ED3E36DA6 /* [CP] Check Pods Manifest.lock */,
 				4568BCA526B041B40073027E /* Sources */,
 				4568BCA626B041B40073027E /* Frameworks */,
 				4568BCA726B041B40073027E /* Resources */,
+				0A6D55D6A7C67F11EE49CB29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,10 +586,12 @@
 				4568BCF726B06E940073027E /* EnablePushNotificationsViewController.xib in Resources */,
 				4568BC9826B041B40073027E /* LaunchScreen.storyboard in Resources */,
 				4568BCEF26B05D320073027E /* AccessCameraViewController.xib in Resources */,
+				452933E226B21B3A0039B56A /* PostTableViewCell.xib in Resources */,
 				4568BCFD26B081690073027E /* EnableLocationServicesViewController.xib in Resources */,
 				4568BC9526B041B40073027E /* Assets.xcassets in Resources */,
 				4568BC9326B041B30073027E /* Main.storyboard in Resources */,
 				4568BCD526B04D3B0073027E /* OnboardingViewController.xib in Resources */,
+				4568BD0226B198C80073027E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,27 +611,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A6D55D6A7C67F11EE49CB29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6469F62FBEC66E5ED3E36DA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ionix App-Ionix AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF895D6A972FB747ADC22EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ionix AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A1A37B43F66961DCC7A3EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ionix App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD86787C3A0DDE6045F717B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ionix App/Pods-Ionix App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ionix App/Pods-Ionix App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ionix App/Pods-Ionix App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4568BC8426B041B30073027E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452933FB26B3501E0039B56A /* EnablePushNotificationsWorker.swift in Sources */,
+				452933EF26B34ACE0039B56A /* AccessCameraInteractor.swift in Sources */,
 				4568BCD426B04D3B0073027E /* OnboardingModels.swift in Sources */,
 				4568BC9026B041B30073027E /* ViewController.swift in Sources */,
+				452933E126B21B3A0039B56A /* PostTableViewCell.swift in Sources */,
+				4568BD1C26B1C9620073027E /* HomeEndpoint.swift in Sources */,
 				4568BCD026B04D3B0073027E /* OnboardingRouter.swift in Sources */,
+				4529340526B353AB0039B56A /* EnableLocationServicesWorker.swift in Sources */,
+				452933F726B350080039B56A /* EnablePushNotificationsRouter.swift in Sources */,
+				452933F326B34AE10039B56A /* AccessCameraPresenter.swift in Sources */,
+				452933D826B20A960039B56A /* IAView.swift in Sources */,
+				4529340926B353B70039B56A /* EnableLocationServicesModels.swift in Sources */,
+				4568BD0126B198C80073027E /* HomeViewController.swift in Sources */,
+				452933DA26B215900039B56A /* IAImageView.swift in Sources */,
 				4568BCD826B0500A0073027E /* GeneralRoute.swift in Sources */,
+				452933F926B350160039B56A /* EnablePushNotificationsPresenter.swift in Sources */,
+				4568BD2226B1D8870073027E /* Home.swift in Sources */,
+				4529340726B353B20039B56A /* EnableLocationServicesInteractor.swift in Sources */,
 				4568BCD626B04D3B0073027E /* OnboardingViewController.swift in Sources */,
 				4568BC8C26B041B30073027E /* AppDelegate.swift in Sources */,
 				4568BCD126B04D3B0073027E /* OnboardingPresenter.swift in Sources */,
+				452933FF26B350320039B56A /* EnablePushNotificationsModels.swift in Sources */,
+				4568BD1E26B1C9780073027E /* HomeAPI.swift in Sources */,
 				4568BCEE26B05D320073027E /* AccessCameraViewController.swift in Sources */,
 				4568BCFC26B081690073027E /* EnableLocationServicesViewController.swift in Sources */,
+				4568BD1926B1C5490073027E /* NetworkService.swift in Sources */,
+				452933FD26B3502A0039B56A /* EnablePushNotificationsInteractor.swift in Sources */,
+				452933F126B34AD80039B56A /* AccessCameraWorker.swift in Sources */,
 				4568BCD226B04D3B0073027E /* OnboardingWorker.swift in Sources */,
+				452933ED26B34AB10039B56A /* AccessCameraModels.swift in Sources */,
 				4568BCD326B04D3B0073027E /* OnboardingInteractor.swift in Sources */,
 				4568BCDA26B050320073027E /* AppRoute.swift in Sources */,
+				4529340326B353A30039B56A /* EnableLocationServicesPresenter.swift in Sources */,
+				4568BD0A26B1991D0073027E /* HomeModels.swift in Sources */,
+				452933D426B1E06F0039B56A /* HomeError.swift in Sources */,
 				4568BCF326B063CF0073027E /* IAButton.swift in Sources */,
+				452933F526B34AEA0039B56A /* AccessCameraRouter.swift in Sources */,
+				4568BD2026B1CAFB0073027E /* HomeWorkers.swift in Sources */,
+				4568BD0626B198EB0073027E /* HomePresenter.swift in Sources */,
 				4568BCF626B06E940073027E /* EnablePushNotificationsViewController.swift in Sources */,
+				4568BD0426B198D80073027E /* HomeInteractor.swift in Sources */,
 				4568BCF126B062F20073027E /* UIButton+CE.swift in Sources */,
+				4529340126B3539C0039B56A /* EnableLocationServicesRouter.swift in Sources */,
+				4568BD0826B199100073027E /* HomeWorker.swift in Sources */,
 				4568BCDC26B05A140073027E /* UINavigationController+CE.swift in Sources */,
+				4568BD0C26B1992B0073027E /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,11 +937,13 @@
 		};
 		4568BCB326B041B40073027E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290C80A671213F0746F83999 /* Pods-Ionix App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,11 +959,13 @@
 		};
 		4568BCB426B041B40073027E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E8905779D4D8FCF99DE690 /* Pods-Ionix App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,6 +981,7 @@
 		};
 		4568BCB626B041B40073027E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E209A149C7AA2D18CA22475 /* Pods-Ionix AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -699,6 +1004,7 @@
 		};
 		4568BCB726B041B40073027E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8F2F763BFB27FE5471A298 /* Pods-Ionix AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,6 +1027,7 @@
 		};
 		4568BCB926B041B40073027E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27527B757FF3EC24BE6177DE /* Pods-Ionix App-Ionix AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -741,6 +1048,7 @@
 		};
 		4568BCBA26B041B40073027E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F205CFB2C1D950FBF4F53D2A /* Pods-Ionix App-Ionix AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
