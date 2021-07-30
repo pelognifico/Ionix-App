@@ -13,14 +13,15 @@ protocol HomeDisplayLogic: AnyObject {
     func displayError(viewModel: Home.Error.ViewModel, on queu: DispatchQueue)
 }
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     
     @IBOutlet weak var searchTableView: UITableView!
     @IBOutlet weak var configButton: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    let cellNibName = "PostTableViewCell"
+    let cellPostNibName = "PostTableViewCell"
+    let cellNoResultsNibName = "NoResultsTableViewCell"
     var dataPost : [Children] = []
     
     var filteredPost : [Children] = []
@@ -73,12 +74,16 @@ class HomeViewController: UIViewController {
         searchTableView.delegate = self
         searchTableView.dataSource = self
         
+        hideKeyboardWhenTappedAround()
+        
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     // MARK: - Method
     
     @objc func loadInitialData() {
+        showLoading()
+        refresher.endRefreshing()
         isSearching = false
         let request = Home.Post.Request()
         interactor?.post(request: request)
@@ -90,14 +95,32 @@ class HomeViewController: UIViewController {
     }
     
     private func settingTableView() {
-        searchTableView.register(UINib(nibName: cellNibName, bundle: nil),
+        searchTableView.register(UINib(nibName: cellPostNibName, bundle: nil),
                            forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
+        searchTableView.register(UINib(nibName: cellNoResultsNibName, bundle: nil),
+                           forCellReuseIdentifier: NoResultsTableViewCell.reuseIdentifier)
         
         searchTableView.refreshControl = refresher
         
         searchTableView.rowHeight = UITableView.automaticDimension
         searchTableView.estimatedRowHeight = 100
     }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(true, animated: true)
+        searchBar.showsCancelButton = true
+        searchTableView.reloadData()
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+            tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
+        }
+
+        @objc func dismissKeyboard() {
+            view.endEditing(true)
+        }
     
     // MARK: - Actions
     
@@ -111,6 +134,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeDisplayLogic {
     
     func displayHome(viewModel: Home.Post.ViewModel, on queu: DispatchQueue = .main) {
+        hideLoading()
         
         let dataChild = viewModel.data.children
         
@@ -118,10 +142,10 @@ extension HomeViewController: HomeDisplayLogic {
         
         refresher.endRefreshing()
         searchTableView.reloadData()
-
     }
     
     func displaySearchPost(viewModel: Home.SearchPost.ViewModel, on queu: DispatchQueue = .main) {
+        hideLoading()
         filteredPost.removeAll()
         
         let dataChild = viewModel.data.children
@@ -130,12 +154,13 @@ extension HomeViewController: HomeDisplayLogic {
         
         refresher.endRefreshing()
         searchTableView.reloadData()
-        
     }
     
     func displayError(viewModel: Home.Error.ViewModel, on queu: DispatchQueue = .main) {
+        hideLoading()
+        
         refresher.endRefreshing()
-        print("Error", viewModel.error.description)
+        displaySimpleAlert(with: "Error", message: viewModel.error.description)
     }
     
 }
@@ -146,7 +171,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if isSearching {
-            return filteredPost.count
+            if filteredPost.isEmpty {
+                return 1
+            } else {
+                return filteredPost.count
+            }
         } else {
             return dataPost.count
         }
@@ -159,31 +188,24 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
                                                         fatalError()
         }
         
+        guard let cell2 = tableView.dequeueReusableCell(withIdentifier: NoResultsTableViewCell.reuseIdentifier,
+                                                       for: indexPath) as? NoResultsTableViewCell else {
+                                                        fatalError()
+        }
+
+        
         if isSearching {
-            cell.configUI(post: filteredPost[indexPath.row].data)
+            if filteredPost.isEmpty {
+                return cell2
+            } else {
+                cell.configUI(post: filteredPost[indexPath.row].data)
+            }
         } else {
             cell.configUI(post: dataPost[indexPath.row].data)
         }
         
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if isSearching {
-//            let selectedWord = filteredPost[indexPath.row].data
-//            print(selectedWord)
-//        } else {
-//            let selectedWord = dataPost[indexPath.row].data
-//            print(selectedWord)
-//        }
-//
-//        // Close keyboard when you select cell
-//        if #available(iOS 13.0, *) {
-//            self.searchBar.searchTextField.endEditing(true)
-//        } else {
-//            // Fallback on earlier versions
-//        }
-//    }
 }
 
 // MARK: - UISearchResultsUpdating
@@ -196,8 +218,10 @@ extension HomeViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
         isSearching = false
         searchBar.text = ""
         searchTableView.reloadData()
+        searchBar.resignFirstResponder()
     }
 }

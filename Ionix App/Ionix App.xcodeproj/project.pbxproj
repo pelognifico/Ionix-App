@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		12E091E31CCA623CC5ECA4F0 /* Pods_Ionix_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85406F8FCD292F2533EE4684 /* Pods_Ionix_App.framework */; };
+		4521584E26B43B84004019EF /* NoResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521584C26B43B84004019EF /* NoResultsTableViewCell.swift */; };
+		4521584F26B43B84004019EF /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4521584D26B43B84004019EF /* NoResultsTableViewCell.xib */; };
+		4521585326B47E82004019EF /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521585126B47E82004019EF /* LoadingIndicatorViewController.swift */; };
+		4521585426B47E82004019EF /* LoadingIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4521585226B47E82004019EF /* LoadingIndicatorViewController.xib */; };
+		4521585626B482CC004019EF /* UIViewController+CE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521585526B482CC004019EF /* UIViewController+CE.swift */; };
 		452933D426B1E06F0039B56A /* HomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D326B1E06F0039B56A /* HomeError.swift */; };
 		452933D826B20A960039B56A /* IAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D726B20A960039B56A /* IAView.swift */; };
 		452933DA26B215900039B56A /* IAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452933D926B215900039B56A /* IAImageView.swift */; };
@@ -29,7 +34,7 @@
 		4529340726B353B20039B56A /* EnableLocationServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340626B353B20039B56A /* EnableLocationServicesInteractor.swift */; };
 		4529340926B353B70039B56A /* EnableLocationServicesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529340826B353B70039B56A /* EnableLocationServicesModels.swift */; };
 		4568BC8C26B041B30073027E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BC8B26B041B30073027E /* AppDelegate.swift */; };
-		4568BC9026B041B30073027E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BC8F26B041B30073027E /* ViewController.swift */; };
+		4568BC9026B041B30073027E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568BC8F26B041B30073027E /* BaseViewController.swift */; };
 		4568BC9326B041B30073027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568BC9126B041B30073027E /* Main.storyboard */; };
 		4568BC9526B041B40073027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568BC9426B041B40073027E /* Assets.xcassets */; };
 		4568BC9826B041B40073027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568BC9626B041B40073027E /* LaunchScreen.storyboard */; };
@@ -92,6 +97,11 @@
 		0E209A149C7AA2D18CA22475 /* Pods-Ionix AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Ionix AppTests/Pods-Ionix AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		27527B757FF3EC24BE6177DE /* Pods-Ionix App-Ionix AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App-Ionix AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ionix App-Ionix AppUITests/Pods-Ionix App-Ionix AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		290C80A671213F0746F83999 /* Pods-Ionix App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ionix App.debug.xcconfig"; path = "Target Support Files/Pods-Ionix App/Pods-Ionix App.debug.xcconfig"; sourceTree = "<group>"; };
+		4521584C26B43B84004019EF /* NoResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultsTableViewCell.swift; sourceTree = "<group>"; };
+		4521584D26B43B84004019EF /* NoResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoResultsTableViewCell.xib; sourceTree = "<group>"; };
+		4521585126B47E82004019EF /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
+		4521585226B47E82004019EF /* LoadingIndicatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingIndicatorViewController.xib; sourceTree = "<group>"; };
+		4521585526B482CC004019EF /* UIViewController+CE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CE.swift"; sourceTree = "<group>"; };
 		452933D326B1E06F0039B56A /* HomeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeError.swift; sourceTree = "<group>"; };
 		452933D726B20A960039B56A /* IAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAView.swift; sourceTree = "<group>"; };
 		452933D926B215900039B56A /* IAImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAImageView.swift; sourceTree = "<group>"; };
@@ -114,7 +124,7 @@
 		4529340826B353B70039B56A /* EnableLocationServicesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesModels.swift; sourceTree = "<group>"; };
 		4568BC8826B041B30073027E /* Ionix App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ionix App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568BC8B26B041B30073027E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4568BC8F26B041B30073027E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4568BC8F26B041B30073027E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4568BC9226B041B30073027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4568BC9426B041B40073027E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4568BC9726B041B40073027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,6 +210,24 @@
 				BC8F2F763BFB27FE5471A298 /* Pods-Ionix AppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4521584B26B43B1A004019EF /* No Results Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4521584C26B43B84004019EF /* NoResultsTableViewCell.swift */,
+				4521584D26B43B84004019EF /* NoResultsTableViewCell.xib */,
+			);
+			path = "No Results Cell";
+			sourceTree = "<group>";
+		};
+		4521585026B47E51004019EF /* Loading Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				4521585126B47E82004019EF /* LoadingIndicatorViewController.swift */,
+				4521585226B47E82004019EF /* LoadingIndicatorViewController.xib */,
+			);
+			path = "Loading Indicator";
 			sourceTree = "<group>";
 		};
 		4568BC7F26B041B30073027E = {
@@ -292,7 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				4568BC8B26B041B30073027E /* AppDelegate.swift */,
-				4568BC8F26B041B30073027E /* ViewController.swift */,
+				4568BC8F26B041B30073027E /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,6 +342,7 @@
 				452933D726B20A960039B56A /* IAView.swift */,
 				4568BCF226B063CF0073027E /* IAButton.swift */,
 				452933D926B215900039B56A /* IAImageView.swift */,
+				4521585026B47E51004019EF /* Loading Indicator */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -321,6 +350,7 @@
 		4568BCC126B04C070073027E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4521585526B482CC004019EF /* UIViewController+CE.swift */,
 				4568BCDB26B05A140073027E /* UINavigationController+CE.swift */,
 				4568BCF026B062F20073027E /* UIButton+CE.swift */,
 			);
@@ -434,6 +464,7 @@
 		4568BCFE26B197560073027E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4521584B26B43B1A004019EF /* No Results Cell */,
 				4568BD1126B1B0AA0073027E /* Post Cell */,
 				452933D326B1E06F0039B56A /* HomeError.swift */,
 				4568BD0B26B1992B0073027E /* HomeRouter.swift */,
@@ -589,7 +620,9 @@
 				452933E226B21B3A0039B56A /* PostTableViewCell.xib in Resources */,
 				4568BCFD26B081690073027E /* EnableLocationServicesViewController.xib in Resources */,
 				4568BC9526B041B40073027E /* Assets.xcassets in Resources */,
+				4521585426B47E82004019EF /* LoadingIndicatorViewController.xib in Resources */,
 				4568BC9326B041B30073027E /* Main.storyboard in Resources */,
+				4521584F26B43B84004019EF /* NoResultsTableViewCell.xib in Resources */,
 				4568BCD526B04D3B0073027E /* OnboardingViewController.xib in Resources */,
 				4568BD0226B198C80073027E /* HomeViewController.xib in Resources */,
 			);
@@ -722,9 +755,10 @@
 				452933FB26B3501E0039B56A /* EnablePushNotificationsWorker.swift in Sources */,
 				452933EF26B34ACE0039B56A /* AccessCameraInteractor.swift in Sources */,
 				4568BCD426B04D3B0073027E /* OnboardingModels.swift in Sources */,
-				4568BC9026B041B30073027E /* ViewController.swift in Sources */,
+				4568BC9026B041B30073027E /* BaseViewController.swift in Sources */,
 				452933E126B21B3A0039B56A /* PostTableViewCell.swift in Sources */,
 				4568BD1C26B1C9620073027E /* HomeEndpoint.swift in Sources */,
+				4521584E26B43B84004019EF /* NoResultsTableViewCell.swift in Sources */,
 				4568BCD026B04D3B0073027E /* OnboardingRouter.swift in Sources */,
 				4529340526B353AB0039B56A /* EnableLocationServicesWorker.swift in Sources */,
 				452933F726B350080039B56A /* EnablePushNotificationsRouter.swift in Sources */,
@@ -743,6 +777,7 @@
 				452933FF26B350320039B56A /* EnablePushNotificationsModels.swift in Sources */,
 				4568BD1E26B1C9780073027E /* HomeAPI.swift in Sources */,
 				4568BCEE26B05D320073027E /* AccessCameraViewController.swift in Sources */,
+				4521585326B47E82004019EF /* LoadingIndicatorViewController.swift in Sources */,
 				4568BCFC26B081690073027E /* EnableLocationServicesViewController.swift in Sources */,
 				4568BD1926B1C5490073027E /* NetworkService.swift in Sources */,
 				452933FD26B3502A0039B56A /* EnablePushNotificationsInteractor.swift in Sources */,
@@ -757,6 +792,7 @@
 				4568BCF326B063CF0073027E /* IAButton.swift in Sources */,
 				452933F526B34AEA0039B56A /* AccessCameraRouter.swift in Sources */,
 				4568BD2026B1CAFB0073027E /* HomeWorkers.swift in Sources */,
+				4521585626B482CC004019EF /* UIViewController+CE.swift in Sources */,
 				4568BD0626B198EB0073027E /* HomePresenter.swift in Sources */,
 				4568BCF626B06E940073027E /* EnablePushNotificationsViewController.swift in Sources */,
 				4568BD0426B198D80073027E /* HomeInteractor.swift in Sources */,
@@ -943,7 +979,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
-				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -965,7 +1000,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP42U42DBN;
-				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Ionix App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

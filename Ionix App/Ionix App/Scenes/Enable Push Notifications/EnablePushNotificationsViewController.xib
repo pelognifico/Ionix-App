@@ -19,17 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="TM2-Y6-6kK">
-                    <rect key="frame" x="76" y="157" width="263" height="231"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="TM2-Y6-6kK">
+                    <rect key="frame" x="75" y="84" width="264" height="231"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Enable push notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN0-O7-EgF">
-                    <rect key="frame" x="76" y="435" width="263" height="24"/>
+                    <rect key="frame" x="75" y="362" width="264" height="24"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWL-mx-71f">
-                    <rect key="frame" x="76" y="495.5" width="263" height="94.5"/>
+                    <rect key="frame" x="75" y="424" width="264" height="94.5"/>
                     <string key="text">Enable push notifications 
 to let 
 send you personal news 
@@ -39,7 +39,7 @@ and updates</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oi-Jk-3YV">
-                    <rect key="frame" x="171" y="712" width="72" height="64"/>
+                    <rect key="frame" x="171" y="651.5" width="72" height="30"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                     <state key="normal" title="Cancel">
                         <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +49,7 @@ and updates</string>
                     </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7O-te-qct" customClass="IAButton" customModule="Ionix_App" customModuleProvider="target">
-                    <rect key="frame" x="107" y="640" width="200" height="50"/>
+                    <rect key="frame" x="107" y="574.5" width="200" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="FbQ-Xp-Q3c"/>
@@ -77,19 +77,18 @@ and updates</string>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="TM2-Y6-6kK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="113" id="11e-q9-Mhm"/>
+                <constraint firstItem="TM2-Y6-6kK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="11e-q9-Mhm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gN0-O7-EgF" secondAttribute="trailing" constant="75" id="4k7-lt-Sfm"/>
-                <constraint firstItem="iWL-mx-71f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="E0j-LX-tOX"/>
-                <constraint firstItem="TM2-Y6-6kK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="KLV-SI-cRz"/>
-                <constraint firstItem="gN0-O7-EgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="Kwl-AJ-GPU"/>
+                <constraint firstItem="iWL-mx-71f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="E0j-LX-tOX"/>
+                <constraint firstItem="TM2-Y6-6kK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="KLV-SI-cRz"/>
+                <constraint firstItem="gN0-O7-EgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="Kwl-AJ-GPU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iWL-mx-71f" secondAttribute="trailing" constant="75" id="LZn-Mb-L3d"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r7O-te-qct" secondAttribute="trailing" constant="107" id="Rv8-iL-e8a"/>
-                <constraint firstItem="2Oi-Jk-3YV" firstAttribute="top" secondItem="r7O-te-qct" secondAttribute="bottom" constant="22" id="STd-Cs-paU"/>
+                <constraint firstItem="2Oi-Jk-3YV" firstAttribute="top" secondItem="r7O-te-qct" secondAttribute="bottom" constant="27" id="STd-Cs-paU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TM2-Y6-6kK" secondAttribute="trailing" constant="75" id="UVk-YC-gdy"/>
                 <constraint firstItem="r7O-te-qct" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="W28-mX-iYi"/>
-                <constraint firstItem="iWL-mx-71f" firstAttribute="top" secondItem="gN0-O7-EgF" secondAttribute="bottom" constant="36.5" id="XT7-c9-ZtB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Oi-Jk-3YV" secondAttribute="bottom" constant="86" id="a4K-iK-464"/>
-                <constraint firstItem="r7O-te-qct" firstAttribute="top" secondItem="iWL-mx-71f" secondAttribute="bottom" constant="50" id="dUx-lv-Ekq"/>
+                <constraint firstItem="iWL-mx-71f" firstAttribute="top" secondItem="gN0-O7-EgF" secondAttribute="bottom" constant="38" id="XT7-c9-ZtB"/>
+                <constraint firstItem="r7O-te-qct" firstAttribute="top" secondItem="iWL-mx-71f" secondAttribute="bottom" constant="56" id="dUx-lv-Ekq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Oi-Jk-3YV" secondAttribute="trailing" constant="171" id="oi0-LA-fFd"/>
                 <constraint firstItem="2Oi-Jk-3YV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="171" id="p0j-SZ-H6z"/>
                 <constraint firstItem="gN0-O7-EgF" firstAttribute="top" secondItem="TM2-Y6-6kK" secondAttribute="bottom" constant="47" id="zrC-HA-pgg"/>

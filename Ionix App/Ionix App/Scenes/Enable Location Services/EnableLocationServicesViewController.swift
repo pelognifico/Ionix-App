@@ -74,6 +74,8 @@ class EnableLocationServicesViewController: UIViewController {
 
                 present(alert, animated: true, completion: nil)
                 return
+                
+                // 3
             case .authorizedAlways, .authorizedWhenInUse:
                 break
 
@@ -82,6 +84,8 @@ class EnableLocationServicesViewController: UIViewController {
             // 4
             locationManager.delegate = self
             locationManager.startUpdatingLocation()
+        
+        router?.routeToHome()
     }
     
     // MARK: - Do something

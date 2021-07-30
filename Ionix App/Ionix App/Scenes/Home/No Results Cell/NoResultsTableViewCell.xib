@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="545" id="KGk-i7-Jjw" customClass="NoResultsTableViewCell" customModule="Ionix_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-QS-kuV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_results" translatesAutoresizingMaskIntoConstraints="NO" id="5JK-jC-h4C">
+                                <rect key="frame" x="8" y="63" width="304" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="Stk-5r-fDH"/>
+                                    <constraint firstAttribute="width" constant="304" id="qnZ-sW-jj4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n86-3q-VI5">
+                                <rect key="frame" x="107" y="340" width="106" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya5-NP-A1W">
+                                <rect key="frame" x="26" y="392" width="268" height="35.5"/>
+                                <string key="text">Sorry, there are no results for this search. 
+Please try another phrase</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n86-3q-VI5" firstAttribute="leading" secondItem="bdf-QS-kuV" secondAttribute="leading" constant="107" id="0LO-Wb-M46"/>
+                            <constraint firstItem="5JK-jC-h4C" firstAttribute="centerX" secondItem="bdf-QS-kuV" secondAttribute="centerX" id="4Xu-3r-O3P"/>
+                            <constraint firstItem="Ya5-NP-A1W" firstAttribute="top" secondItem="n86-3q-VI5" secondAttribute="bottom" constant="28" id="HTS-tk-E4t"/>
+                            <constraint firstItem="5JK-jC-h4C" firstAttribute="top" secondItem="bdf-QS-kuV" secondAttribute="top" constant="63" id="R4A-IM-TDE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ya5-NP-A1W" secondAttribute="trailing" constant="26" id="Rfm-oQ-I8k"/>
+                            <constraint firstAttribute="bottom" secondItem="Ya5-NP-A1W" secondAttribute="bottom" constant="117.5" id="VFZ-le-9Vb"/>
+                            <constraint firstItem="Ya5-NP-A1W" firstAttribute="centerX" secondItem="n86-3q-VI5" secondAttribute="centerX" id="Xvb-1d-yih"/>
+                            <constraint firstItem="Ya5-NP-A1W" firstAttribute="leading" secondItem="bdf-QS-kuV" secondAttribute="leading" constant="26" id="aXT-fP-WkK"/>
+                            <constraint firstItem="n86-3q-VI5" firstAttribute="top" secondItem="5JK-jC-h4C" secondAttribute="bottom" constant="28" id="iia-z5-awv"/>
+                            <constraint firstItem="n86-3q-VI5" firstAttribute="centerX" secondItem="5JK-jC-h4C" secondAttribute="centerX" id="mwv-HM-fzf"/>
+                            <constraint firstAttribute="trailing" secondItem="n86-3q-VI5" secondAttribute="trailing" constant="107" id="oKU-R6-1AA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bdf-QS-kuV" secondAttribute="trailing" id="EUI-lr-OtD"/>
+                    <constraint firstAttribute="bottom" secondItem="bdf-QS-kuV" secondAttribute="bottom" id="GcJ-1f-g2k"/>
+                    <constraint firstItem="bdf-QS-kuV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ImW-dg-rpX"/>
+                    <constraint firstItem="bdf-QS-kuV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a48-9Y-Bho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="msgErrorLabel" destination="Ya5-NP-A1W" id="Wyj-vo-0bU"/>
+                <outlet property="pictureImageView" destination="5JK-jC-h4C" id="68E-0g-Hrp"/>
+                <outlet property="titleLabel" destination="n86-3q-VI5" id="Ih1-Kg-8nV"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="232.70089285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="no_results" width="118" height="96.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
