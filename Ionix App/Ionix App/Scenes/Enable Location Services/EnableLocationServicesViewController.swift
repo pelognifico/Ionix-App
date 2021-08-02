@@ -53,6 +53,9 @@ class EnableLocationServicesViewController: UIViewController {
 
         self.navigationController?.clearBackground()
         self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
     }
 
     // MARK: - Methods
@@ -63,8 +66,10 @@ class EnableLocationServicesViewController: UIViewController {
             switch status {
                 // 1
             case .notDetermined:
-                    locationManager.requestWhenInUseAuthorization()
-                    return
+                locationManager.requestWhenInUseAuthorization()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    self.router?.routeToHome()
+                }
 
                 // 2
             case .denied, .restricted:
@@ -77,15 +82,10 @@ class EnableLocationServicesViewController: UIViewController {
                 
                 // 3
             case .authorizedAlways, .authorizedWhenInUse:
-                break
-
+                DispatchQueue.main.async {
+                    self.router?.routeToHome()
+                }
             }
-
-            // 4
-            locationManager.delegate = self
-            locationManager.startUpdatingLocation()
-        
-        router?.routeToHome()
     }
     
     // MARK: - Do something

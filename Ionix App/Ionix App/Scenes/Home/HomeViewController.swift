@@ -112,6 +112,14 @@ class HomeViewController: BaseViewController {
         searchTableView.reloadData()
     }
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        isSearching = false
+        searchBar.text = ""
+        searchTableView.reloadData()
+        searchBar.resignFirstResponder()
+    }
+    
     func hideKeyboardWhenTappedAround() {
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
             tap.cancelsTouchesInView = false

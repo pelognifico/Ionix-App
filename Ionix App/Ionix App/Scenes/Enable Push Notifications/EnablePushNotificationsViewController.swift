@@ -56,12 +56,17 @@ class EnablePushNotificationsViewController: UIViewController {
     // MARK: - Methods
     
     func notificationsPermission() {
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {(accepted, error) in
-          if !accepted {
-             print("Permisse denied by user")
-          }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+                if granted {
+                    print("Notifications permission granted.")
+                    DispatchQueue.main.async {
+                        self.router?.routeToEnableLocationsServices()
+                    }
+                }
+                else {
+                    print("Notifications permission denied because: \(error?.localizedDescription).")
+                }
         }
-        router?.routeToEnableLocationsServices()
     }
     
     // MARK: - Do something
