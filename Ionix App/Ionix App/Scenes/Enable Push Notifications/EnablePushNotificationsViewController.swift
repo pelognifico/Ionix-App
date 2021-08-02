@@ -55,6 +55,7 @@ class EnablePushNotificationsViewController: UIViewController {
     
     // MARK: - Methods
     
+    // Request the permission to enable notifications push
     func notificationsPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
                 if granted {
@@ -70,6 +71,7 @@ class EnablePushNotificationsViewController: UIViewController {
     }
     
     // MARK: - Do something
+    // Request service something
     func doSomething() {
         let request = EnablePushNotifications.Something.Request()
         interactor?.doSomething(request: request)

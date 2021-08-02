@@ -423,10 +423,10 @@
 			isa = PBXGroup;
 			children = (
 				452933F426B34AEA0039B56A /* AccessCameraRouter.swift */,
+				452933EC26B34AB10039B56A /* AccessCameraModels.swift */,
 				452933F226B34AE10039B56A /* AccessCameraPresenter.swift */,
 				452933F026B34AD80039B56A /* AccessCameraWorker.swift */,
 				452933EE26B34ACE0039B56A /* AccessCameraInteractor.swift */,
-				452933EC26B34AB10039B56A /* AccessCameraModels.swift */,
 				4568BCEC26B05D320073027E /* AccessCameraViewController.swift */,
 				4568BCED26B05D320073027E /* AccessCameraViewController.xib */,
 			);
@@ -437,10 +437,10 @@
 			isa = PBXGroup;
 			children = (
 				452933F626B350080039B56A /* EnablePushNotificationsRouter.swift */,
+				452933FE26B350320039B56A /* EnablePushNotificationsModels.swift */,
 				452933F826B350160039B56A /* EnablePushNotificationsPresenter.swift */,
 				452933FA26B3501D0039B56A /* EnablePushNotificationsWorker.swift */,
 				452933FC26B3502A0039B56A /* EnablePushNotificationsInteractor.swift */,
-				452933FE26B350320039B56A /* EnablePushNotificationsModels.swift */,
 				4568BCF426B06E940073027E /* EnablePushNotificationsViewController.swift */,
 				4568BCF526B06E940073027E /* EnablePushNotificationsViewController.xib */,
 			);
@@ -451,10 +451,10 @@
 			isa = PBXGroup;
 			children = (
 				4529340026B3539C0039B56A /* EnableLocationServicesRouter.swift */,
+				4529340826B353B70039B56A /* EnableLocationServicesModels.swift */,
 				4529340226B353A30039B56A /* EnableLocationServicesPresenter.swift */,
 				4529340426B353AB0039B56A /* EnableLocationServicesWorker.swift */,
 				4529340626B353B20039B56A /* EnableLocationServicesInteractor.swift */,
-				4529340826B353B70039B56A /* EnableLocationServicesModels.swift */,
 				4568BCFA26B081690073027E /* EnableLocationServicesViewController.swift */,
 				4568BCFB26B081690073027E /* EnableLocationServicesViewController.xib */,
 			);

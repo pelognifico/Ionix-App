@@ -19,15 +19,15 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing {
     var dataStore: HomeDataStore?
     
     // MARK: - Routing
+    // Access to GeneralRoute that contain the routes
     func routeToAccessCamera() {
         navigateToAccessCamera(source: viewController!, destination: GeneralRoute.accessCamera)
     }
     
     // MARK: - Navigation
-    
+    // Navigate to AccessCameraViewControlller
     func navigateToAccessCamera(source: HomeViewController, destination: GeneralRoute) {
         guard let accessCameraVC = destination.scene else { return }
         source.navigationController?.pushViewController(accessCameraVC, animated: true)
-//        source.navigationController?.pushViewController(destination.scene!, animated: true)
     }
 }

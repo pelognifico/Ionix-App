@@ -26,17 +26,15 @@ class AccessCameraRouter: NSObject, AccessCameraRoutingLogic, AccessCameraDataPa
     weak var delegate: AccessCameraRouterDelegate?
   
     // MARK: - Routing
-    
+    // Access to GeneralRoute that contain the routes
     func routeToEnablePushNotifications() {
         navigateToEnablePushNotifications(source: viewController!, destination: GeneralRoute.enablePushNotifications)
     }
     
     // MARK: - Navigation
-    
+    // Navigate to EnablePushNotificationsViewControlller
     func navigateToEnablePushNotifications(source: AccessCameraViewController, destination: GeneralRoute) {
         guard let enablePushNotificationsVC = destination.scene else { return }
         source.navigationController?.pushViewController(enablePushNotificationsVC, animated: true)
-//        source.navigationController?.pushViewController(destination.scene!, animated: true)
     }
-    
 }

@@ -28,6 +28,8 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore {
     }
     
     // MARK: - Methods
+    
+    // Handling the request and will return a response object to the Presenter.
     func post(request: Home.Post.Request) {
         
         worker.post(request: request, completion: { result in
@@ -44,6 +46,7 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore {
         })
     }
     
+    // Handling the request and will return a response object to the Presenter.
     func searchPost(request: Home.SearchPost.Request) {
         
         worker.searchPost(request: request, completion: { result in

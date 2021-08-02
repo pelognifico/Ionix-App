@@ -2,7 +2,7 @@
 //  EnableLocationServicesModels.swift
 //  Ionix App
 //
-//  Created by Ruben Duarte on 29/7/21.
+//  Created by Carlos Villamizar on 29/7/21.
 //
 
 import Foundation

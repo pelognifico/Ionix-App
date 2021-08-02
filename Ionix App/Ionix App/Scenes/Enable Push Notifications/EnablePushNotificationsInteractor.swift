@@ -16,10 +16,12 @@ protocol EnablePushNotificationsDataStore {
 }
 
 class EnablePushNotificationsInteractor: EnablePushNotificationsBusinessLogic, EnablePushNotificationsDataStore {
+    
     var presenter: EnablePushNotificationsPresentationLogic?
     var worker: EnablePushNotificationsWorker?
   
-    // MARK: Do something
+    // MARK: - Do something
+    // Handling the request and will return a response object to the Presenter.
     func doSomething(request: EnablePushNotifications.Something.Request) {
         worker = EnablePushNotificationsWorker()
         worker?.doSomeWork()

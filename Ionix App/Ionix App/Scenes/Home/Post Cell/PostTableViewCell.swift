@@ -22,6 +22,7 @@ class PostTableViewCell: UITableViewCell {
         // Initialization code
     }
     
+    // Assigning values to cell data
     func configUI(post: DataPost) {
         self.setImage(post.url)
         self.descriptionLabel.text = post.title
@@ -29,6 +30,7 @@ class PostTableViewCell: UITableViewCell {
         self.numberMessagesLabel.text = String(post.num_comments)
     }
     
+    // SetUp image from url
     func setImage(_ urlString: String?) {
         guard let urlString = urlString, !urlString.isEmpty, let imageURL = URL(string: urlString) else { return }
         

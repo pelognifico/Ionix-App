@@ -57,6 +57,7 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
     
     // MARK: - Methods
     
+    // Setup Camera and route to Enable Push Notifications View
     func setupCamera() {
         captureSession = AVCaptureSession()
         
@@ -91,8 +92,8 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
         router?.routeToEnablePushNotifications()
     }
     
+    // First check if the device has a camera (otherwise will crash in Simulator - also, some iPod touch models do not have a camera).
     func cameraSelected() {
-        // First we check if the device has a camera (otherwise will crash in Simulator - also, some iPod touch models do not have a camera).
         if let _ = AVCaptureDevice.default(for: .video) {
             let authStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
             switch authStatus {
@@ -114,7 +115,7 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
         }
     }
 
-
+    // Show an alert if permise is denied
     func alertPromptToAllowCameraAccessViaSettings() {
         let alert = UIAlertController(title: "Ionix App needs to access to your camera", message: "Allow to access your camera", preferredStyle: .alert )
         alert.addAction(UIAlertAction(title: "Open Settings", style: .cancel) { alert in
@@ -125,7 +126,7 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
         present(alert, animated: true, completion: nil)
     }
 
-
+    // Show an alert if permise is denied
     func permissionPrimeCameraAccess() {
         let alert = UIAlertController( title: "Ionix App needs to access to your camera", message: "Allow to access your camera", preferredStyle: .alert )
         let allowAction = UIAlertAction(title: "Allow", style: .default, handler: { (alert) -> Void in
@@ -145,6 +146,7 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
     }
     
     // MARK: - Do something
+    // Request service something
     func doSomething() {
         let request = AccessCamera.Something.Request()
         interactor?.doSomething(request: request)
@@ -152,7 +154,6 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
 
 
     // MARK: - Actions
-    
     @IBAction func onClickAllow(_ sender: Any) {
         cameraSelected()
     }
@@ -160,7 +161,6 @@ class AccessCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
     @IBAction func onClickCancel(_ sender: Any) {
         router?.routeToEnablePushNotifications()
     }
-    
 }
 
 // MARK: - AccessCameraDisplayLogic

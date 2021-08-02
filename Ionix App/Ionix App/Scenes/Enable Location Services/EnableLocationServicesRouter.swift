@@ -2,7 +2,7 @@
 //  EnableLocationServicesRouter.swift
 //  Ionix App
 //
-//  Created by Ruben Duarte on 29/7/21.
+//  Created by Carlos Villamizar on 29/7/21.
 //
 
 import Foundation
@@ -26,13 +26,13 @@ class EnableLocationServicesRouter: NSObject, EnableLocationServicesRoutingLogic
     weak var delegate: EnableLocationServicesRouterDelegate?
   
     // MARK: - Routing
-    
+    // Access to GeneralRoute that contain the routes
     func routeToHome() {
         navigateToHome(source: viewController!, destination: GeneralRoute.home)
     }
     
     // MARK: - Navigation
-    
+    // Navigate to HomesViewControlller
     func navigateToHome(source: EnableLocationServicesViewController, destination: GeneralRoute) {
         source.navigationController?.pushViewController(destination.scene!, animated: true)
     }

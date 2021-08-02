@@ -60,42 +60,43 @@ class EnableLocationServicesViewController: UIViewController {
 
     // MARK: - Methods
     
+    // Request the permission to enable location services
     func getLocation() {
         let status = CLLocationManager.authorizationStatus()
 
             switch status {
-                // 1
-            case .notDetermined:
-                locationManager.requestWhenInUseAuthorization()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    self.router?.routeToHome()
-                }
+                    // 1
+                case .notDetermined:
+                    locationManager.requestWhenInUseAuthorization()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        self.router?.routeToHome()
+                    }
 
-                // 2
-            case .denied, .restricted:
-                let alert = UIAlertController(title: "Location Services disabled", message: "Please enable Location Services in Settings", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(okAction)
+                    // 2
+                case .denied, .restricted:
+                    let alert = UIAlertController(title: "Location Services disabled", message: "Please enable Location Services in Settings", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okAction)
 
-                present(alert, animated: true, completion: nil)
-                return
-                
-                // 3
-            case .authorizedAlways, .authorizedWhenInUse:
-                DispatchQueue.main.async {
-                    self.router?.routeToHome()
-                }
+                    present(alert, animated: true, completion: nil)
+                    return
+                    
+                    // 3
+                case .authorizedAlways, .authorizedWhenInUse:
+                    DispatchQueue.main.async {
+                        self.router?.routeToHome()
+                    }
             }
     }
     
     // MARK: - Do something
+    // Request service something
     func doSomething() {
         let request = EnableLocationServices.Something.Request()
         interactor?.doSomething(request: request)
     }
     
     // MARK: - Actions
-    
     @IBAction func onClickEnable(_ sender: Any) {
         getLocation()
     }
@@ -103,16 +104,18 @@ class EnableLocationServicesViewController: UIViewController {
     @IBAction func onClickCancel(_ sender: Any) {
         router?.routeToHome()
     }
-    
 }
 
+// MARK: - CLLocationManagerDelegate
 extension EnableLocationServicesViewController: CLLocationManagerDelegate {
+    // Get the last user location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.last {
                 print("Current location: \(currentLocation)")
             }
     }
     
+    // Print error of location
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }

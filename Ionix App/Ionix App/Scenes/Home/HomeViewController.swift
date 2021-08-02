@@ -80,7 +80,6 @@ class HomeViewController: BaseViewController {
     }
     
     // MARK: - Method
-    
     @objc func loadInitialData() {
         showLoading()
         refresher.endRefreshing()
@@ -89,11 +88,13 @@ class HomeViewController: BaseViewController {
         interactor?.post(request: request)
     }
     
+    // Request service searchPost
     func searchPost(query: String){
         let request = Home.SearchPost.Request(query: query)
         interactor?.searchPost(request: request)
     }
     
+    // Configure CellView in HomeViewController
     private func settingTableView() {
         searchTableView.register(UINib(nibName: cellPostNibName, bundle: nil),
                            forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
@@ -106,12 +107,14 @@ class HomeViewController: BaseViewController {
         searchTableView.estimatedRowHeight = 100
     }
     
+    // Begin Editing SearchBar
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.setShowsCancelButton(true, animated: true)
         searchBar.showsCancelButton = true
         searchTableView.reloadData()
     }
     
+    // End Editing SearchBar
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = false
         isSearching = false
@@ -120,27 +123,29 @@ class HomeViewController: BaseViewController {
         searchBar.resignFirstResponder()
     }
     
+    // Hide Keyboard on tap screen
     func hideKeyboardWhenTappedAround() {
-            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            view.addGestureRecognizer(tap)
-        }
-
-        @objc func dismissKeyboard() {
-            view.endEditing(true)
-        }
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    // Dismiss Keyboard
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     // MARK: - Actions
     
+    // Button configuration
     @IBAction func onClickConfiguration(_ sender: Any) {
         router?.routeToAccessCamera()
     }
 }
 
 // MARK: - HomeDisplayLogic
-
 extension HomeViewController: HomeDisplayLogic {
-    
+    // Show and filter view posts
     func displayHome(viewModel: Home.Post.ViewModel, on queu: DispatchQueue = .main) {
         hideLoading()
         
@@ -152,6 +157,7 @@ extension HomeViewController: HomeDisplayLogic {
         searchTableView.reloadData()
     }
     
+    // Show and filter view searchPosts
     func displaySearchPost(viewModel: Home.SearchPost.ViewModel, on queu: DispatchQueue = .main) {
         hideLoading()
         filteredPost.removeAll()
@@ -164,6 +170,7 @@ extension HomeViewController: HomeDisplayLogic {
         searchTableView.reloadData()
     }
     
+    // Show an simple alert error
     func displayError(viewModel: Home.Error.ViewModel, on queu: DispatchQueue = .main) {
         hideLoading()
         
@@ -174,8 +181,8 @@ extension HomeViewController: HomeDisplayLogic {
 }
 
 // MARK: - UITableViewDelegate & UITableViewDataSource
-
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+    // Show rows of the table depend status variable bool
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if isSearching {
@@ -190,6 +197,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    // Show cells of the table depend status variable bool
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier,
                                                        for: indexPath) as? PostTableViewCell else {
@@ -201,7 +209,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
                                                         fatalError()
         }
 
-        
         if isSearching {
             if filteredPost.isEmpty {
                 return cell2
@@ -217,14 +224,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 // MARK: - UISearchResultsUpdating
-
 extension HomeViewController: UISearchBarDelegate {
     
+    // Actions search bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         isSearching = true
         searchPost(query: searchText.lowercased())
     }
     
+    // Actions cancel button searchBar
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = false
         isSearching = false

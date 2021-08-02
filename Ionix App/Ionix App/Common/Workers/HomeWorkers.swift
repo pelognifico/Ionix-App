@@ -19,12 +19,14 @@ class HomeWorker: HomeServiceProtocol{
         self.homeService = homeService
     }
     
+    // Request the data
     func post(request: Home.Post.Request, completion: @escaping (Result<Home.Post.Response, HomeError>) -> Void) {
         homeService.post(request: request, completion: { result in
             completion(result)
         })
     }
     
+    // Request the data
     func searchPost(request: Home.SearchPost.Request, completion: @escaping (Result<Home.SearchPost.Response, HomeError>) -> Void) {
         homeService.searchPost(request: request, completion: { result in
             completion(result)

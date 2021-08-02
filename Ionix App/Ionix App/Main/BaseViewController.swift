@@ -19,6 +19,7 @@ class BaseViewController: UIViewController {
 
 // MARK: - Loading View
 extension BaseViewController {
+    // Calling LoadingIndicator from LoadingIndicatorViewController
     func showLoading() {
         loadingVC = LoadingIndicatorViewController()
         add(loadingVC!)

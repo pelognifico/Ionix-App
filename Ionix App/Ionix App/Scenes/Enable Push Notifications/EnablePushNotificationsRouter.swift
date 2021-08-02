@@ -26,13 +26,13 @@ class EnablePushNotificationsRouter: NSObject, EnablePushNotificationsRoutingLog
     weak var delegate: EnablePushNotificationsRouterDelegate?
   
     // MARK: - Routing
-    
+    // Access to GeneralRoute that contain the routes
     func routeToEnableLocationsServices() {
         navigateToEnableLocationsServices(source: viewController!, destination: GeneralRoute.enableLocationServices)
     }
     
     // MARK: - Navigation
-    
+    // Navigate to EnableLocationServicesViewControlller
     func navigateToEnableLocationsServices(source: EnablePushNotificationsViewController, destination: GeneralRoute) {
         source.navigationController?.pushViewController(destination.scene!, animated: true)
     }

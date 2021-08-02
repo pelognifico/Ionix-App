@@ -9,6 +9,7 @@ import Foundation
 
 class HomeAPI: HomeServiceProtocol {
     
+    // Comunication with EndPoint
     func post(request: Home.Post.Request, completion: @escaping (Result<Home.Post.Response, HomeError>) -> Void) {
         NetworkService.share.request(endpoint: HomeEndpoint.getPost) { result in
             switch result {
@@ -26,6 +27,7 @@ class HomeAPI: HomeServiceProtocol {
         }
     }
     
+    // Comunication with EndPoint
     func searchPost(request: Home.SearchPost.Request, completion: @escaping (Result<Home.SearchPost.Response, HomeError>) -> Void) {
         
         NetworkService.share.request(endpoint: HomeEndpoint.searchPost(parameter: request.query)) { result in
